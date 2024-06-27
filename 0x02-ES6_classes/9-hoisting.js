@@ -1,7 +1,7 @@
 export class HolbertonClass {
     constructor(year, location) {
-      this.year = year;
-      this.location = location;
+      this._year = year;
+      this._location = location;
     }
   
     get year() {
@@ -30,7 +30,7 @@ export class StudentHolberton {
   
     get fullStudentDescription() {
       return `${this._firstName} ${this._lastName} - \
-  ${this._holbertonClass.year} - ${this._holbertonClass.location}`;
+        ${this._holbertonClass.year} - ${this._holbertonClass.location}`;
     }
 }
   
